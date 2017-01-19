@@ -8,6 +8,7 @@ Rails.configuration.to_prepare do
     private
 
     def internal_url?(url)
+      return true unless self.respond_to? :root_url
       url.try(:first) == '/' || url.try(:include?, root_url)
     end
   end
