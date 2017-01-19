@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     no_follow_external_links (0.1.0)
-      rails (~> 5.0.0)
+      rails (>= 4.1.0)
 
 GEM
   remote: https://rubygems.org/
